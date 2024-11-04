@@ -15,8 +15,8 @@ const Welcome = lazy(() => import('users/Welcome').catch(() => {
 
  const TaskList = lazy(() => import('tasks/TaskList').catch(() => {
   return { default: () => <div className='error'>Component is not available!</div> };
-  })
-  );
+ })
+ );
 
   const App = () => {
     const [jwt, setJwt] = useState('');
