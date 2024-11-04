@@ -47,6 +47,7 @@ const sampleData = [
 class Api {
     constructor({ address }) {
         // стандартная реализация — объект options
+        this.initialize();
         this._address = address;
     }
 
