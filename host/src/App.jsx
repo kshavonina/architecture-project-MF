@@ -3,12 +3,17 @@ import ReactDOM from "react-dom/client";
 
 import "./index.css";
 
-const UsersTestControl = lazy(() => import('users/UsersTestControl').catch(() => {
+const Welcome = lazy(() => import('users/Welcome').catch(() => {
   return { default: () => <div className='error'>Component is not available!</div> };
  })
  );
 
- const TasksTestControl = lazy(() => import('tasks/TasksTestControl').catch(() => {
+ const UserLogin = lazy(() => import('users/UserLogin').catch(() => {
+  return { default: () => <div className='error'>Component is not available!</div> };
+ })
+ );
+
+ const TaskList = lazy(() => import('tasks/TaskList').catch(() => {
   return { default: () => <div className='error'>Component is not available!</div> };
   })
   );
